@@ -1,0 +1,354 @@
+
+/*--------------------------------------
+	Zero Margins, Padding, and Border
+--------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;	}
+
+
+/*--------------------------------------
+	General Styles
+--------------------------------------*/
+
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: rgb(0,50,75) url(../_images/bg-body.png) repeat 0 0;
+	color: rgb(105,105,105);
+	font-family: "fontin sans",optima,candara,"trebuchet-MS",sans-serif;
+	font-size: 12px;	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: garamond, cochin, cambria, times, serif;
+	font-weight: normal;
+	letter-spacing: 1px;	}
+
+h1	{	font-size: 3.5em;	}
+
+p, ul, ol	{
+	line-height: 1.5;	}
+	
+p {	margin: 5px 0; }
+
+
+input, select {
+	font-size: 14px;
+	color: rgb(128,128,128);
+	font-family: "fontin sans", optima, candara,  "trebuchet-MS", sans-serif;	}
+	
+
+/*--------------------------------------
+	Links
+--------------------------------------*/
+
+a			{	text-decoration: none;	}
+a:link		{	color: rgb(0,85,126);	}
+a:visited	{	color: rgb(0,50,75);	}
+a:hover 	{	color: rgb(0,170,255);	}
+a:active	{	color: rgb(255,215,0);	}
+p a	{
+	background: transparent url(../_images/bg-p-a-link.png) repeat-x 0 -2px;	}
+p a:hover	{	background-position:  -20px -2px;	}
+p a:active 	{	background-image: none;	}
+
+
+a.readmore {
+	background: transparent url(../_images/icon-pointer.png) no-repeat right 0;
+	padding-right: 40px;
+}
+	
+
+/*--------------------------------------
+	Columns
+--------------------------------------*/
+
+.aligncenter	{ 	
+	display:block; 
+	margin:0 auto;	}
+.alignleft 		{	float:left;	}
+.alignright 	{	float:right;	}
+.alignclear		{ 	clear: both;	}
+
+
+/*--------------------------------------
+	Text
+--------------------------------------*/
+
+.textalignleft 		{	text-align: left;	}
+.textalignright 	{	text-align: right;	}
+.textaligncenter	{	text-align: center;	}
+.textalignjustify	{	text-align: justify;	}
+.textuppercase		{	text-transform: uppercase;	}
+.textlowercase		{	text-transform: lowercase;	}
+.textcapitalize		{	text-transform: capitalize;	}
+
+
+/*--------------------------------------
+	Flourishes
+--------------------------------------*/
+
+.flourishright	{	
+	background: transparent url(../_images/flourish-right.png) no-repeat right center;	}
+.flourishleft	{	
+	background: transparent url(../_images/flourish-left.png) no-repeat left center;	}
+.flourishup	{	
+	background: transparent url(../_images/flourish-up.png) no-repeat center top;	}
+.flourishdown	{	
+	background: transparent url(../_images/flourish-down.png) no-repeat center 3px;	}
+
+
+/*--------------------------------------
+	Layout & Chromes
+--------------------------------------*/
+
+#page {
+	display: block;
+	position: relative;
+	width: 980px;
+	_width: 1014px;
+	padding: 0 16px;
+	min-height: 600px;
+	background: transparent url(../_images/bg-page.png) repeat-y 0 0;	}
+
+#header, #footer {
+	display: block;
+	position: relative;
+	border: none;
+	width: 981px;
+	height: 100px;
+	margin: 0 auto;
+	background: transparent url(../_images/bg-header.png) repeat-x 0 0;	}
+	
+	
+#footer {
+	height: 20px;
+	background-position: 0 bottom;	}
+
+#content {
+	padding-top: 40px;
+	display: block;
+	position: relative;	}
+
+#content #column1 {
+	display: block;
+	position: relative;
+	left: -80px;
+	width: 314px;	}
+
+
+#content #column2 {
+	display: block;
+	position: relative;
+	left: -40px;
+	width: 470px;	}
+
+
+#content #column3 {
+	width: 190px;
+	right: 5px;
+	background-position: center bottom;
+	padding-bottom: 45px;
+	display: block;
+	position: relative;	}
+
+
+/*--------------------------------------
+	Header
+--------------------------------------*/
+	
+#header h1 { /* voxLIBRIS logo */
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 306px;
+	height: 66px;
+	line-height: 400px;
+	overflow: hidden;
+	background: transparent url(../_images/logo-voxlibris.png) no-repeat 0 0;	}
+
+#header #search {
+	position: absolute;
+	right: 10px;
+	top: 10px;	}
+
+#header #search input, #header #search select {
+	background: transparent url(../_images/bg-grad01.png) repeat-x center center;
+	border: 1px solid rgb(102,102,102);
+	height: 25px;
+	width: 200px;
+	font-size: 18px;
+	padding: 0 10px;
+	margin-bottom: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	}
+
+#header #search select {
+	background-image: url(../_images/bg-grad01.png);
+	padding-right: 0;	}
+
+
+/*--------------------------------------
+	Column 1 - Sidebar
+--------------------------------------*/
+
+#column1 .sidebar  {
+	background: transparent url(../_images/bg-sidebar1-bottom.png) no-repeat 0 bottom;
+	width: 100%;
+	padding-bottom: 60px;	}
+
+#column1 .sidebar h2 {
+	background: transparent url(../_images/bg-sidebar1-top.png) no-repeat 0 0;
+	width: 100%;
+	padding: 80px 0 8px 18%;
+	text-align: left;
+	font-variant: small-caps;
+	color: red;
+	font-size: 2.5em;	}
+
+#column1 .sidebar .content {
+	background: transparent url(../_images/bg-sidebar1-mid.png) repeat-y 0 0;
+	width: 100%;	}
+
+#column1 .sidebar p, #column1 .sidebar ul {
+	list-style-position: inside;
+	list-style-type: none;
+	width: 65%;
+	margin: 0 auto;
+	margin-bottom: 5px;	}
+	
+#column1 .sidebar ul li {
+	padding: 5px 0;
+	border-top: 1px solid rgb(192,192,192) }
+
+#column1 .sidebar ul a {
+	display: block;
+	width: 100%;
+	font-family: garamond, cochin, cambria, times, serif;
+	text-transform: uppercase; }
+
+
+
+/*--------------------------------------
+	Column 1 - Ads
+--------------------------------------*/
+
+
+#column1 .ads  {
+	background: transparent url(../_images/bg-ads-bottom.png) no-repeat 0 bottom;	}
+
+#column1 .ads h2 {
+	background: transparent url(../_images/bg-ads-top.png) no-repeat 0 0;	}
+
+#column1 .ads .content {
+	background: transparent url(../_images/bg-ads-mid.png) repeat-y 0 0;
+	width: 100%;	}
+
+#column1 .ads p {
+	width: 60%;
+	color: rgb(0,0,0);
+	padding: 10px 80px;	}
+
+/*--------------------------------------
+	Column 2
+--------------------------------------*/
+
+	
+#column2 h1 {	padding-top: 30px	}
+
+
+#column2 .section {
+	background-position: bottom center;
+	padding-bottom: 50px;
+	margin-bottom: 3px;
+}
+
+#column2 h2 {
+	font-variant: small-caps;
+	margin: 3px 0 30px 0;
+	height: 35px;
+	border-top: 1px solid rgb(128,128,128);
+	font-size: 2.1em;
+}
+
+#column2 .section h3 {
+	font-family: "fontin sans", optima, candara,  "trebuchet-MS", sans-serif;
+	height: 60px;
+	font-size: 1.75em;
+	margin-top: 20px;
+}
+
+#column2 .section p {
+	margin-bottom: 20px;
+}
+
+#column2 .section .columnsub {
+	width: 210px;
+}
+
+#column2 .section .columnsub p {
+	height: 110px;
+}
+
+/*--------------------------------------
+	Column 3
+--------------------------------------*/
+
+#column3 h2 { 
+	font-size: 2.1em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 35px;
+	
+	color: rgb(255,255,255);	}
+	
+/*--------------------------------------
+	Column 3 - Top Books
+--------------------------------------*/
+
+#topbooks { 
+	list-style: none;
+	margin-left: 5px;
+	padding-bottom: 35px;	}
+
+#topbooks li {
+	font-size: 1.1em;
+	width: 175px;
+	text-align: center;
+	background: none;
+	display: block;
+	margin-top: 40px;	}	
+
+#topbooks img	{	
+	border: 1px solid rgb(192,192,192);
+	-webkit-box-shadow: rgb(0,0,0) 0 0 5px;
+	-moz-box-shadow:  rgb(0,0,0) 0 0 5px;
+	box-shadow:  rgb(0,0,0) 0 0 5px;	}
+
+#topbooks li a {
+	display: block;
+	width: 100%;	
+	color: rgb(169,169,169);	}
+
+#topbooks li a cite {
+	display: block;
+	line-height: 1.1;
+	font-size: 1.25em;
+	color: rgb(255,255,255);
+	font-family: garamond, cochin, cambria, times, serif;
+	font-style: italic;	}
+	
+#topbooks li a:hover {
+	background: none;
+	color: rgb(0,170,255);	}
+	
+		
+#topbooks li a:hover>img {
+	border-color: rgb(0,170,255);	}
+	
+
+ 
